@@ -8,10 +8,10 @@ import { GoArrowUpRight } from "react-icons/go";
 export const RecentProjects = () => {
   return (
     <div className="mt-40" id="projects">
-      <h1 className="heading mb-10">
+      <h2 className="heading mb-10">
         A small selection of{" "}
         <span className="text-primary"> recent projects</span>
-      </h1>
+      </h2>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div

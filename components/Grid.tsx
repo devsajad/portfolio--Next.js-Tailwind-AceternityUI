@@ -18,7 +18,7 @@ export const Grid = () => {
               img,
               spareImg,
             },
-            index,
+
           ) => (
             <BentoGridItem
               key={id}

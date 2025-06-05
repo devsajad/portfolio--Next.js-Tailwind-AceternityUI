@@ -9,7 +9,7 @@
   --color-secondry: var(--color-gray-100);
 
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
-  --bg-gradient-grid: linear-gradient(to right, #04071d, #0c0e23);
+  --color-gradient-grid: linear-gradient(to right, #04071d, #0c0e23);
 
   --animate-first: moveVertical 30s ease infinite;
   --animate-second: moveInCircle 20s reverse infinite;

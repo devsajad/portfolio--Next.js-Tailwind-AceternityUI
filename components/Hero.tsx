@@ -35,9 +35,9 @@ export const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="md:tex-lg mb-4 line-clamp-1 text-center text-sm text-gray-50 md:tracking-wider lg:text-2xl">
+          <h1 className="md:tex-lg mb-4 line-clamp-1 text-center text-sm text-gray-50 md:tracking-wider lg:text-2xl">
             Hi! I&apos;m Sajjad, a Front-end Developer based in Iran.
-          </p>
+          </h1>
 
           <div className="grid grid-cols-2 gap-2 p-2 md:gap-4">
             <Link href="#">
