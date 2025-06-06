@@ -8,6 +8,8 @@ import animationData from "@/data/animationData.json";
 import { Button } from "./Button";
 import { IoCopyOutline } from "react-icons/io5";
 import { useState } from "react";
+import Image from "next/image";
+import codeBlockBg from "@/public/b5.svg";
 
 export const BentoGrid = ({
   className,
@@ -65,8 +67,16 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         {/* Main image container */}
         <div className="absolute h-full w-full">
+          {id === 5 && (
+            <Image
+              src={codeBlockBg}
+              alt="Picture of code block"
+              className={imgClassName}
+            />
+          )}
           {img && (
-            <img
+            <Image
+              fill
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center")}
@@ -81,11 +91,14 @@ export const BentoGridItem = ({
           } `}
         >
           {spareImg && (
-            <img
-              src={spareImg}
-              alt={spareImg}
-              className="h-full w-full object-cover object-center"
-            />
+            <div className="absolute h-full w-full ">
+              <Image
+                fill
+                src={spareImg}
+                alt={spareImg}
+                className="object-cover object-center"
+              />
+            </div>
           )}
         </div>
 
@@ -157,7 +170,11 @@ export const BentoGridItem = ({
                   }}
                 />
 
-                <Button className="h-12" handlClick={handleCopyClick}>
+                <Button
+                  className="h-12"
+                  handlClick={handleCopyClick}
+                  type="button"
+                >
                   <Button.Content className="bg-[#161a31] px-7 text-white lg:w-[12.5rem]">
                     {isCopy ? "Email compied" : "Copy my email"}
                     <IoCopyOutline className="w-2.5" />
