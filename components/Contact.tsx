@@ -3,7 +3,6 @@ import React from "react";
 import { Label } from "./ui/Label";
 import { Input } from "./ui/Input";
 import { cn } from "@/lib/utils";
-
 import austronaut from "@/public/austronaut.webp";
 import Image from "next/image";
 import { Button } from "./ui/Button";
@@ -55,8 +54,6 @@ export function Contact() {
               Send message &rarr;
             </Button.Content>
           </Button>
-
-          {/* <div className="my-8 h-[1px] w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent dark:via-neutral-700" /> */}
         </form>
       </div>
 
@@ -68,32 +65,6 @@ export function Contact() {
           className="rounded-[50px] z-10 opacity-80 object-contain bottom-0 hidden md:block "
         />
       </div>
-      {/* <div className="flex flex-col space-y-4">
-        <button
-          className="group/btn shadow-input relative flex h-10 w-full items-center justify-start space-x-2 rounded-md bg-gray-50 px-4 font-medium text-black dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_#262626]"
-          type="submit"
-        >
-          <IconBrandGithub className="h-4 w-4 dark:text-neutral-300" />
-          <span className="text-sm dark:text-neutral-300">GitHub</span>
-          <BottomGradient />
-        </button>
-        <button
-          className="group/btn shadow-input relative flex h-10 w-full items-center justify-start space-x-2 rounded-md bg-gray-50 px-4 font-medium text-black dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_#262626]"
-          type="submit"
-        >
-          <IconBrandGoogle className="h-4 w-4  dark:text-neutral-300" />
-          <span className="text-sm dark:text-neutral-300">Google</span>
-          <BottomGradient />
-        </button>
-        <button
-          className="group/btn shadow-input relative flex h-10 w-full items-center justify-start space-x-2 rounded-md bg-gray-50 px-4 font-medium text-black dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_#262626]"
-          type="submit"
-        >
-          <IconBrandOnlyfans className="h-4 w-4 dark:text-neutral-300" />
-          <span className="text-sm dark:text-neutral-300">OnlyFans</span>
-          <BottomGradient />
-        </button>
-      </div> */}
     </div>
   );
 }
