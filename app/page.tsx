@@ -1,9 +1,9 @@
-import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { Grid } from "@/components/Grid";
 import { Hero } from "@/components/Hero";
 import { RecentProjects } from "@/components/RecentProjects";
 import { TimeLineSec } from "@/components/TimeLineSec";
+import ContactClientWrapper from "@/components/ui/ContactClientWrapper";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <Grid />
         <RecentProjects />
         <TimeLineSec />
-        <Contact />
+        <ContactClientWrapper />
         <Footer />
       </div>
     </main>
