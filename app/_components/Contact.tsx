@@ -1,7 +1,9 @@
+"use client";
+
 import React from "react";
 import { Label } from "./ui/Label";
 import { Input } from "./ui/Input";
-import { cn } from "@/lib/utils";
+import { cn } from "@/app/_lib/utils";
 import austronaut from "@/public/austronaut.webp";
 import Image from "next/image";
 import { Button } from "./ui/Button";
@@ -61,6 +63,7 @@ export function Contact() {
           fill
           src={austronaut}
           alt="austronaut picture"
+          quality={60}
           className="rounded-[50px] z-10 opacity-80 object-contain bottom-0 hidden md:block "
         />
       </div>

@@ -1,10 +1,10 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/app/_lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { GridGlobe } from "./GridGlobe";
 import Lottie from "lottie-react";
-import animationData from "@/data/animationData.json";
+import animationData from "@/app/_data/animationData.json";
 import { Button } from "./Button";
 import { IoCopyOutline } from "react-icons/io5";
 import { useState } from "react";
@@ -69,6 +69,7 @@ export const BentoGridItem = ({
         <div className="absolute h-full w-full">
           {id === 5 && (
             <Image
+              quality={70}
               src={codeBlockBg}
               alt="Picture of code block"
               className={imgClassName}
@@ -76,6 +77,7 @@ export const BentoGridItem = ({
           )}
           {img && (
             <Image
+              quality={70}
               fill
               src={img}
               alt={img}
@@ -93,6 +95,7 @@ export const BentoGridItem = ({
           {spareImg && (
             <div className="absolute h-full w-full ">
               <Image
+                quality={70}
                 fill
                 src={spareImg}
                 alt={spareImg}
@@ -125,7 +128,6 @@ export const BentoGridItem = ({
           </div>
 
           {/* Item 2 */}
-          {id === 2 && <GridGlobe />}
 
           {/* Item 3  */}
           {id === 3 && (

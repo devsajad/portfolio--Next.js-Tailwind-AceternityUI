@@ -1,4 +1,4 @@
-import { projects } from "@/data/compsData";
+import { projects } from "@/app/_data/compsData";
 import React from "react";
 import { PinContainer } from "./ui/PinContainer";
 import Image from "next/image";
@@ -25,12 +25,19 @@ export const RecentProjects = () => {
               <div className="sm:w-[570px] sm:h-[40vh]  relative flex items-center justify-center w-[80vw] overflow-hidden h-[30vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl">
                   <Image
+                    quality={70}
                     fill
                     src={bg}
                     alt="background of the project section "
                   />
 
-                  <Image fill src={img} alt={title} className="bottom-0" />
+                  <Image
+                    quality={70}
+                    fill
+                    src={img}
+                    alt={title}
+                    className="bottom-0"
+                  />
                 </div>
               </div>
 
@@ -60,6 +67,7 @@ export const RecentProjects = () => {
                     >
                       <div className="aspect-square">
                         <Image
+                          quality={70}
                           fill
                           src={icon}
                           alt="icon5"

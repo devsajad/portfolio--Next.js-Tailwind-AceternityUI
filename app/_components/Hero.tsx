@@ -1,7 +1,5 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
-import { StarsBackground } from "./ui/StarsBackground";
-import { ShootingStars } from "./ui/ShootingStars";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect ";
 import { Button } from "./ui/Button";
 import Link from "next/link";
@@ -10,11 +8,6 @@ import { FaLocationArrow } from "react-icons/fa";
 export const Hero = () => {
   return (
     <header className="pt-10 pb-20">
-      <div className="-z-[100]">
-        <StarsBackground starDensity={0.00015} minTwinkleSpeed={0.2} />
-        <ShootingStars />
-      </div>
-
       <div>
         <Spotlight fill="white" className="md: -top-10 -left-10 h-screen" />
         <Spotlight
