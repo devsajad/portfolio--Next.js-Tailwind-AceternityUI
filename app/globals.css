@@ -1,12 +1,16 @@
 @import "tailwindcss";
 
 @theme inline {
+  --color-primary: var(--color-purple-300);
+  --color-primary-shade1 : #E2CBFF;
+  --color-secondry: var(--color-gray-100);
+  --color-accent-color: #393BB2;
+  
   --color-black-100: #000319;
   --color-grid-text: #c1c2d3;
   --color-grid-background: rgb(4, 7, 29);
   --color-project-background: #13162d;
-  --color-primary: var(--color-purple-300);
-  --color-secondry: var(--color-gray-100);
+  --color-border-color: rgba(156, 163, 175, 0.1);
 
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
   --color-gradient-grid: linear-gradient(to right, #04071d, #0c0e23);
@@ -16,6 +20,10 @@
   --animate-third: moveInCircle 40s linear infinite;
   --animate-fourth: moveHorizontal 40s ease infinite;
   --animate-fifth: moveInCircle 20s ease infinite;
+
+  --shadow-input:
+    0px 2px 3px -1px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(25, 28, 33, 0.02),
+    0px 0px 0px 1px rgba(25, 28, 33, 0.08);
 
   @keyframes moveHorizontal {
     0% {
@@ -52,16 +60,15 @@
       transform: translateY(-50%);
     }
   }
-}
-
-@keyframes spotlight {
-  0% {
-    opacity: 0;
-    transform: translate(-72%, -62%) scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -40%) scale(1);
+  @keyframes spotlight {
+    0% {
+      opacity: 0;
+      transform: translate(-72%, -62%) scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -40%) scale(1);
+    }
   }
 }
 
@@ -84,5 +91,9 @@
 
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
+  }
+
+  .grid-gradient {
+    background: var(--color-gradient-grid);
   }
 }

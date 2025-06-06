@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-label": "^2.1.7",
     "@react-three/drei": "^10.1.2",
     "@react-three/fiber": "^9.0.0-alpha.8",
     "@tabler/icons-react": "^3.34.0",
+    "@tsparticles/engine": "^3.8.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.8.1",
     "clsx": "^2.1.1",
     "lottie-react": "^2.4.1",
     "motion": "^12.16.0",

@@ -1,6 +1,7 @@
 "use client";
 import { useScroll, useTransform, motion } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
+import { SparkleHeading } from "./SparkleHeading";
 
 interface TimelineEntry {
   title: React.ReactNode;
@@ -32,9 +33,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full font-sans md:px-10 rounded-2xl px-5"
       ref={containerRef}
     >
-      <h2 className="heading mb-15">
-        Exprience <span className="text-primary">and</span> Education
-      </h2>
+      <SparkleHeading underlineClass="w-[30rem] md:w-[40rem] lg:w-[50rem]">
+        <p>
+          Exprience <span className="text-primary">and</span> Education
+        </p>
+      </SparkleHeading>
       <div
         ref={ref}
         className="relative max-w-7xl mx-auto flex flex-col gap-5 justify-center "

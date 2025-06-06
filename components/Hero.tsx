@@ -10,7 +10,7 @@ import { FaLocationArrow } from "react-icons/fa";
 export const Hero = () => {
   return (
     <header className="pt-10 pb-20">
-      <div>
+      <div className="-z-[100]">
         <StarsBackground starDensity={0.00015} minTwinkleSpeed={0.2} />
         <ShootingStars />
       </div>
@@ -41,15 +41,15 @@ export const Hero = () => {
 
           <div className="grid grid-cols-2 gap-2 p-2 md:gap-4">
             <Link href="#">
-              <Button className="h-12">
+              <Button className="h-12" type="button">
                 <Button.Content className="text-black-100 px-7">
-                  Show my work
+                  My projects
                   <FaLocationArrow className="w-2.5" />
                 </Button.Content>
               </Button>
             </Link>
 
-            <Button className="h-12">
+            <Button className="h-12" type="button">
               <Button.Content className="bg-slate-950 px-7 text-white">
                 My Resume
                 {/* <FaFileDownload className="w-2.5" /> */}

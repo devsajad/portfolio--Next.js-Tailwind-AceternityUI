@@ -4,13 +4,16 @@ export const Button = ({
   children,
   handlClick,
   className,
+  type,
 }: {
   children: React.ReactNode;
   className: string;
   handlClick?: () => void;
+  type: "button" | "submit" | "reset";
 }) => {
   return (
     <button
+      type={type}
       onClick={handlClick}
       className={`${className} relative inline-flex cursor-pointer items-center justify-center overflow-hidden rounded-md p-[1px] md:mt-10`}
     >

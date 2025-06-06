@@ -1,3 +1,4 @@
+import { Contact } from "@/components/Contact";
 import { Grid } from "@/components/Grid";
 import { Hero } from "@/components/Hero";
 import { RecentProjects } from "@/components/RecentProjects";
@@ -11,6 +12,7 @@ export default function Home() {
         <Grid />
         <RecentProjects />
         <TimeLineSec />
+        <Contact />
       </div>
     </main>
   );

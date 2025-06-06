@@ -4,15 +4,18 @@ import { PinContainer } from "./ui/PinContainer";
 import Image from "next/image";
 import bg from "@/public/bg.png";
 import { GoArrowUpRight } from "react-icons/go";
+import { SparkleHeading } from "./ui/SparkleHeading";
 
 export const RecentProjects = () => {
   return (
     <div className="mt-40" id="projects">
-      <h2 className="heading mb-10">
-        A small selection of{" "}
-        <span className="text-primary"> recent projects</span>
-      </h2>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8">
+      <SparkleHeading underlineClass="w-[30rem] md:w-[40rem] lg:w-[60rem]">
+        <p>
+          A small selection of{" "}
+          <span className="text-primary"> recent projects</span>
+        </p>
+      </SparkleHeading>
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 lg:gap-y-8 gap-y-30">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}

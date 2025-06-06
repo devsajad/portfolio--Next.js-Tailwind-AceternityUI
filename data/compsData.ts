@@ -19,9 +19,9 @@ export const gridItems = [
   {
     id: 4,
     title: "It's Sajjad Zarepour",
-    description: "a front-end developer who loves building",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "absolute left-0 top-0 opacity-90 ",
+    description: "a front-end dev who loves building",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2 max-md:-order-1",
+    imgClassName: "absolute left-0 top-0 opacity-90 w-full h-full ",
     titleClassName: "justify-start",
     img: "/test.webp",
   },
