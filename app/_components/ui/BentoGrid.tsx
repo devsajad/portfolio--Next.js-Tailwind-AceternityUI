@@ -2,7 +2,6 @@
 
 import { cn } from "@/app/_lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
-import { GridGlobe } from "./GridGlobe";
 import Lottie from "lottie-react";
 import animationData from "@/app/_data/animationData.json";
 import { Button } from "./Button";
