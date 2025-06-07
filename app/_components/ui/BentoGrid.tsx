@@ -112,19 +112,18 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "relative flex min-h-40 flex-col p-5 px-5 transition duration-200 group-hover/bento:translate-x-2 md:h-full lg:p-10",
+            "z-11 relative flex min-h-40 flex-col p-5 px-5 transition duration-200 group-hover/bento:translate-x-2 md:h-full lg:p-10",
             id === 6 && "gap-3 md:gap-0 lg:p-6!",
           )}
         >
           {/* Grid Texts */}
-          <div className="z-10 font-sans text-sm font-extralight text-[#C1C2D3] md:max-w-50 md:text-xs lg:text-base">
-            {description}
-          </div>
-
           <div
-            className={`z-10 max-w-96 font-sans text-lg font-bold text-neutral-600 lg:text-3xl dark:text-neutral-300`}
+            className={`max-w-96 font-sans text-lg font-bold text-neutral-600 lg:text-3xl dark:text-neutral-300`}
           >
             {title}
+          </div>
+          <div className="font-sans text-sm font-extralight text-[#C1C2D3] max-w-45 md:max-w-52 md:text-xs lg:text-base">
+            {description}
           </div>
 
           {/* Item 2 */}
@@ -147,7 +146,7 @@ export const BentoGridItem = ({
 
               <div className="flex flex-col gap-3 md:gap-3">
                 <span className="rounded-lg bg-[#10132E] px-3 py-4 text-center lg:px-3"></span>
-                {["Tailwind", "Next.js", "TypeScript"].map((item, key) => (
+                {["Tailwind", "JavaScript", "Git"].map((item, key) => (
                   <span
                     key={key}
                     className="rounded-lg bg-[#10132E] px-3 py-2 text-center text-xs text-[#C1C2D3] opacity-50 lg:px-3 lg:text-base lg:opacity-70"
@@ -174,7 +173,7 @@ export const BentoGridItem = ({
                 />
 
                 <Button
-                  className="h-12"
+                  className="h-12 md:mt-3"
                   handlClick={handleCopyClick}
                   type="button"
                 >

@@ -1,7 +1,10 @@
-import React from "react";
+import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
+import { Spinner } from "./Spinner";
 
-const World = dynamic(() => import("./Globe").then((m) => m.World));
+const World = dynamic(() => import("./Globe").then((m) => m.World), {
+  ssr: false,
+});
 
 export function GridGlobe() {
   const globeConfig = {
@@ -32,7 +35,9 @@ export function GridGlobe() {
       <div className="relative mx-auto w-full max-w-7xl overflow-hidden px-4 h-96">
         <div className="pointer-events-none absolute inset-x-0 bottom-0 z-40 h-40 w-full bg-gradient-to-b from-transparent to-white select-none dark:to-black" />
         <div className="absolute z-10 h-72 w-full md:h-full">
-          <World data={[]} globeConfig={globeConfig} />
+          <Suspense fallback={<Spinner />}>
+            <World data={[]} globeConfig={globeConfig} />
+          </Suspense>
         </div>
       </div>
     </div>

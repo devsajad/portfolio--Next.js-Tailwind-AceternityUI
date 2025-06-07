@@ -8,8 +8,8 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
+    title: "From Idea to Interface",
+    description: "I start with layout, finish with love.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -19,10 +19,11 @@ export const gridItems = [
 
   {
     id: 4,
-    title: "It's Sajjad Zarepour",
-    description: "a front-end dev who loves building",
+    title: "Hey, I'm Sajjad",
+    description:
+      "Welcome to my space.I'm exploring the Dev Universe and Floating in Code",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 max-md:-order-1",
-    imgClassName: "absolute left-0 top-0 opacity-90 ",
+    imgClassName: "absolute left-0 top-0 opacity-90 z-11",
     titleClassName: "justify-start",
     img: "/test.webp",
   },
@@ -30,7 +31,7 @@ export const gridItems = [
   {
     id: 3,
     title: "My tech stack",
-    description: "I constantly try to improve",
+    description: "Self-Taught and Always Learning",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -39,9 +40,9 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm based in Iran Mashhad",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    title: "Based in Mashhad, Iran.",
+    description: "available for remote and none work worldwide",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1 text-center",
     imgClassName: "",
     titleClassName: "justify-start items-center",
     img: "",
@@ -49,8 +50,9 @@ export const gridItems = [
   },
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "UI to server-side",
+    description:
+      "React & Next.js developer crafting fast, user-friendly experiences",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -59,11 +61,11 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
+    title: "Let’s Build Together",
+    description: "Got an idea? Let’s launch it!",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    titleClassName: "justify-center md:max-w-full max-w-60 text-center ",
     img: "",
     spareImg: "",
   },
@@ -104,50 +106,19 @@ export const projects = [
   },
 ];
 
-export const companies = [
+export const timelineData = [
   {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    year: "2020–2024",
+    title: "Computer Engineering",
+    badges: ["Bachelor degree", "University of Birjand"],
+    description:
+      "Studied fundamental and advanced topics in computer engineering with a strong focus on software development, data structures, and web technologies. Developed hands-on experience through academic projects, self-study, and freelance work during the degree.",
   },
   {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
-
-export const socialMedia = [
-  {
-    id: 1,
-    img: "/git.svg",
-  },
-  {
-    id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
-    img: "/link.svg",
+    year: "2024–2025",
+    title: "Freelance Developer",
+    badges: ["React", "Next.js", "Tailwind"],
+    description:
+      "Worked with various clients to design, build, and maintain responsive and accessible web interfaces. Specialized in building modern front-end applications using React, Tailwind CSS, and Next.js. Collaborated closely with designers and backend developers to deliver high-quality user experiences. Focused on performance optimization, component reusability, and clean, maintainable code.",
   },
 ];

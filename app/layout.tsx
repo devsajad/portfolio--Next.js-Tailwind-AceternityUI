@@ -4,8 +4,7 @@ import "./globals.css";
 import { FloatingNav } from "@/app/_components/ui/FloatingNav";
 import { navItems } from "@/app/_data/compsData";
 import { Footer } from "@/app/_components/Footer";
-import { StarsBackground } from "@/app/_components/ui/StarsBackground";
-import { ShootingStars } from "@/app/_components/ui/ShootingStars";
+import { BodyLightsStars } from "./_components/ui/BodyLightsStars";
 
 const inter = Inter({
   variable: "--font-inter-sans",
@@ -23,17 +22,13 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html>
+    <html className="overflow-x-hidden">
       <body
         className={`${inter.variable} antialiased relative bg-black-100 overflow-x-hidden`}
         style={{ fontFamily: "var(--font-inter-sans)" }}
       >
-        <StarsBackground
-          starDensity={0.00015}
-          minTwinkleSpeed={0.2}
-          className="z-201"
-        />
-        <ShootingStars className="z-201" />
+        <BodyLightsStars />
+
         <nav>
           <FloatingNav navItems={navItems} />
         </nav>

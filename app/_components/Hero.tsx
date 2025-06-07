@@ -1,54 +1,43 @@
 import React from "react";
-import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect ";
 import { Button } from "./ui/Button";
 import Link from "next/link";
-import { FaLocationArrow } from "react-icons/fa";
+import { Avatar } from "./ui/Avatar";
+import { FiArrowUpRight, FiDownload } from "react-icons/fi";
 
 export const Hero = () => {
   return (
-    <header className="pt-10 pb-20">
-      <div>
-        <Spotlight fill="white" className="md: -top-10 -left-10 h-screen" />
-        <Spotlight
-          fill="purple"
-          className="top-5 left-full h-[80dvh] w-[80dvw]"
-        />
-        <Spotlight fill="blue" className="left-50 h-[90dvh] md:left-70" />
-      </div>
-
-      <div className="relative z-10 my-20 flex items-center justify-center">
-        <div className="flex max-w-[50-dvw] flex-col items-center justify-center md:max-w-2xl lg:max-w-[60dvw]">
-          <h2 className="max-w-80 text-center text-xs tracking-wider text-blue-100 uppercase">
-            Dynamic Web Magic with Next.js
+    <header className="md:pt-6 pb-20">
+      <div className="relative z-10 my-20 flex flex-col items-center justify-center">
+        <div>
+          <Avatar />
+          <h2 className="max-w-80 text-center text-xs tracking-wider text-blue-100 uppercase mt-6">
+            Frontend Developer  / Next.js
           </h2>
+        </div>
 
+        <div className="flex max-w-[50-dvw] flex-col items-center justify-center md:max-w-2xl lg:max-w-[60dvw] mb-3 ">
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Bringing Ideas to Life Through Pixel-Perfect Frontends"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
-
-          <h1 className="md:tex-lg mb-4 line-clamp-1 text-center text-sm text-gray-50 md:tracking-wider lg:text-2xl">
-            Hi! I&apos;m Sajjad, a Front-end Developer based in Iran.
-          </h1>
-
-          <div className="grid grid-cols-2 gap-2 p-2 md:gap-4">
-            <Link href="#">
-              <Button className="h-12" type="button">
-                <Button.Content className="text-black-100 px-7">
-                  My projects
-                  <FaLocationArrow className="w-2.5" />
-                </Button.Content>
-              </Button>
-            </Link>
-
+        </div>
+        <div className="grid grid-cols-2 gap-2 p-2 md:gap-4">
+          <Link href="/projects">
             <Button className="h-12" type="button">
-              <Button.Content className="bg-slate-950 px-7 text-white">
-                My Resume
-                {/* <FaFileDownload className="w-2.5" /> */}
+              <Button.Content className="text-black-100 px-5 md:px-9">
+                <FiArrowUpRight className="w-5" />
+                <span>My projects</span>
               </Button.Content>
             </Button>
-          </div>
+          </Link>
+
+          <Button className="h-12" type="button">
+            <Button.Content className="bg-slate-950 text-white">
+              <FiDownload className="w-5" />
+              <span>My Resume</span>
+            </Button.Content>
+          </Button>
         </div>
       </div>
     </header>

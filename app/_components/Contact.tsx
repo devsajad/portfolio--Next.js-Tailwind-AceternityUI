@@ -16,7 +16,7 @@ export function Contact() {
   };
 
   return (
-    <div className="relative mt-30 shadow-input mx-auto max-w-4xl rounded-xl  md:rounded-2xl grid-gradient border-1 border-border-color md:p-8 grid md:grid-cols-2 items-center md:gap-8 z-10 p-4">
+    <div className="relative shadow-input mx-auto max-w-4xl rounded-xl  md:rounded-2xl grid-gradient border-1 border-border-color md:p-8 grid md:grid-cols-2 items-center md:gap-8 z-10 p-4">
       <BackgroundBeams />
       <div className="space-y-6">
         <header className="mb-12">

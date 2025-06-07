@@ -11,7 +11,7 @@ export function SparkleHeading({
 }) {
   return (
     <div className="w-full  flex flex-col items-center justify-center overflow-hidden rounded-md">
-      <h1 className={`heading ${headingClass} z-10`}>{children}</h1>
+      <h2 className={`heading ${headingClass} z-10`}>{children}</h2>
       <div className={`h-5 relative animate-pulse ${underlineClass}`}>
         {/* Gradients */}
         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />

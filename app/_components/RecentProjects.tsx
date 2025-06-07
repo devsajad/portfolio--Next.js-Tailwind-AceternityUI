@@ -8,14 +8,16 @@ import { SparkleHeading } from "./ui/SparkleHeading";
 
 export const RecentProjects = () => {
   return (
-    <div id="projects">
-      <SparkleHeading underlineClass="w-[30rem] md:w-[40rem] lg:w-[60rem]">
-        <p>
-          A small selection of{" "}
-          <span className="text-primary"> recent projects</span>
-        </p>
-      </SparkleHeading>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 lg:gap-y-8 gap-y-30">
+    <section id="projects" className="md:mt-30 mt-15">
+      <div className="mb-8 md:mb-0">
+        <SparkleHeading underlineClass="w-[30rem] md:w-[40rem] lg:w-[60rem]">
+          <p>
+            Selection of
+            <span className="text-primary"> recent projects</span>
+          </p>
+        </SparkleHeading>
+      </div>
+      <div className="flex flex-wrap items-center justify-center gap-x-24 lg:gap-y-2 gap-y-17">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
@@ -89,6 +91,6 @@ export const RecentProjects = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
