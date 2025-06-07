@@ -25,15 +25,15 @@ export default function RootLayout({
   return (
     <html>
       <body
-        className={`${inter.variable} antialiased relative bg-black-100`}
+        className={`${inter.variable} antialiased relative bg-black-100 overflow-x-hidden`}
         style={{ fontFamily: "var(--font-inter-sans)" }}
       >
         <StarsBackground
           starDensity={0.00015}
           minTwinkleSpeed={0.2}
-          className="z-10"
+          className="z-201"
         />
-        <ShootingStars className="z-10" />
+        <ShootingStars className="z-201" />
         <nav>
           <FloatingNav navItems={navItems} />
         </nav>

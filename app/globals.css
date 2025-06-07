@@ -2,10 +2,10 @@
 
 @theme inline {
   --color-primary: var(--color-purple-300);
-  --color-primary-shade1 : #E2CBFF;
+  --color-primary-shade1: #e2cbff;
   --color-secondry: var(--color-gray-100);
-  --color-accent-color: #393BB2;
-  
+  --color-accent-color: #393bb2;
+
   --color-black-100: #000319;
   --color-grid-text: #c1c2d3;
   --color-grid-background: rgb(4, 7, 29);

@@ -8,7 +8,7 @@ import { SparkleHeading } from "./ui/SparkleHeading";
 
 export const RecentProjects = () => {
   return (
-    <div className="mt-40" id="projects">
+    <div id="projects">
       <SparkleHeading underlineClass="w-[30rem] md:w-[40rem] lg:w-[60rem]">
         <p>
           A small selection of{" "}

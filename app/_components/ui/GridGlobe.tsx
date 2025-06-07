@@ -1,9 +1,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 
-const World = dynamic(() => import("./Globe").then((m) => m.World), {
-  ssr: false,
-});
+const World = dynamic(() => import("./Globe").then((m) => m.World));
 
 export function GridGlobe() {
   const globeConfig = {
