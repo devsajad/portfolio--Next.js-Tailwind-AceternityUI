@@ -30,7 +30,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full font-sans md:px-10 rounded-2xl px-5"
+      className="w-full font-sans md:px-10 rounded-2xl px-5 pt-40"
       ref={containerRef}
     >
       <SparkleHeading underlineClass="w-[30rem] md:w-[40rem] lg:w-[50rem]">

@@ -60,6 +60,7 @@ export function Contact() {
 
       <div className="relative h-80/100 self-end">
         <Image
+          priority={true}
           fill
           src={austronaut}
           alt="austronaut picture"

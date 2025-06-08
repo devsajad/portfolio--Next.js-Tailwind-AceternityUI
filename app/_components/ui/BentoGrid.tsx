@@ -61,7 +61,7 @@ export const BentoGridItem = ({
           {id === 1 && (
             <Image
               priority={true}
-              quality={70}
+              quality={50}
               src={lapTopBg}
               alt={"laptop Background"}
               className={cn(imgClassName, "object-cover object-center")}
@@ -70,7 +70,7 @@ export const BentoGridItem = ({
           {id === 4 && (
             <Image
               priority={true}
-              quality={80}
+              quality={40}
               src={avatarBg}
               alt={"avatar Background"}
               className={cn(imgClassName, "object-cover object-center min-h-full")}
@@ -79,7 +79,7 @@ export const BentoGridItem = ({
           {id === 5 && (
             <Image
               priority={true}
-              quality={70}
+              quality={40}
               src={codeBlockBg}
               alt="Picture of code block"
               className={imgClassName}

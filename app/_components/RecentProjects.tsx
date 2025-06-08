@@ -27,14 +27,16 @@ export const RecentProjects = () => {
               <div className="sm:w-[570px] sm:h-[40vh]  relative flex items-center justify-center w-[80vw] overflow-hidden h-[30vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl">
                   <Image
+                    priority={id === 1 || id === 2 ? true : false}
                     quality={70}
                     fill
                     src={bg}
-                    alt="background of the project section "
+                    alt="background of the project section"
                   />
 
                   <Image
-                    quality={70}
+                    priority={id === 1 || id === 2 ? true : false}
+                    quality={50}
                     fill
                     src={img}
                     alt={title}
