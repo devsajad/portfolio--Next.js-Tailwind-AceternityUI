@@ -22,7 +22,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html className="overflow-x-hidden">
+    <html lang="en" className="overflow-x-hidden">
       <body
         className={`${inter.variable} antialiased relative bg-black-100 overflow-x-hidden`}
         style={{ fontFamily: "var(--font-inter-sans)" }}

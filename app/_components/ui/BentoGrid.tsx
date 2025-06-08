@@ -1,15 +1,14 @@
-"use client";
-
 import { cn } from "@/app/_lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { GridGlobe } from "./GridGlobe";
-import Lottie from "lottie-react";
-import animationData from "@/app/_data/animationData.json";
-import { Button } from "./Button";
-import { IoCopyOutline } from "react-icons/io5";
-import { useState } from "react";
 import Image from "next/image";
-import codeBlockBg from "@/public/b5.svg";
+
+import codeBlockBg from "@/public/b5.webp";
+import lapTopBg from "@/public/b1.webp";
+import avatarBg from "@/public/test.webp";
+import gridBg from "@/public/grid.webp";
+
+import { CopyEmailClient } from "./CopyEmail";
 
 export const BentoGrid = ({
   className,
@@ -37,7 +36,6 @@ export const BentoGridItem = ({
   className,
   imgClassName,
   titleClassName,
-  img,
   spareImg,
 }: {
   imgClassName?: string;
@@ -49,13 +47,6 @@ export const BentoGridItem = ({
   description?: string | React.ReactNode;
   id: number;
 }) => {
-  const [isCopy, setCopy] = useState(false);
-
-  function handleCopyClick() {
-    navigator.clipboard.writeText("sajadzarepur@gmail.com");
-    setCopy(true);
-  }
-
   return (
     // Main Container
     <div
@@ -67,21 +58,31 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         {/* Main image container */}
         <div className="absolute h-full w-full">
+          {id === 1 && (
+            <Image
+              priority={true}
+              quality={70}
+              src={lapTopBg}
+              alt={"laptop Background"}
+              className={cn(imgClassName, "object-cover object-center")}
+            />
+          )}
+          {id === 4 && (
+            <Image
+              priority={true}
+              quality={80}
+              src={avatarBg}
+              alt={"avatar Background"}
+              className={cn(imgClassName, "object-cover object-center min-h-full")}
+            />
+          )}
           {id === 5 && (
             <Image
+              priority={true}
               quality={70}
               src={codeBlockBg}
               alt="Picture of code block"
               className={imgClassName}
-            />
-          )}
-          {img && (
-            <Image
-              quality={70}
-              fill
-              src={img}
-              alt={img}
-              className={cn(imgClassName, "object-cover object-center")}
             />
           )}
         </div>
@@ -92,16 +93,14 @@ export const BentoGridItem = ({
             id === 5 && "w-full opacity-80"
           } `}
         >
-          {spareImg && (
-            <div className="absolute h-full w-full ">
-              <Image
-                quality={70}
-                fill
-                src={spareImg}
-                alt={spareImg}
-                className="object-cover object-center"
-              />
-            </div>
+          {id === 5 && spareImg && (
+            <Image
+              priority={true}
+              quality={80}
+              src={gridBg}
+              alt={"background with grid pattern"}
+              className="object-cover object-center"
+            />
           )}
         </div>
 
@@ -160,29 +159,7 @@ export const BentoGridItem = ({
 
           {id === 6 && (
             <div>
-              <div>
-                <Lottie
-                  className="absolute top-0"
-                  key={isCopy ? "play" : "stop"}
-                  loop={false}
-                  autoplay={isCopy}
-                  animationData={animationData}
-                  rendererSettings={{
-                    preserveAspectRatio: "",
-                  }}
-                />
-
-                <Button
-                  className="h-12 md:mt-3"
-                  handlClick={handleCopyClick}
-                  type="button"
-                >
-                  <Button.Content className="bg-[#161a31] px-7 text-white lg:w-[12.5rem]">
-                    {isCopy ? "Email compied" : "Copy my email"}
-                    <IoCopyOutline className="w-2.5" />
-                  </Button.Content>
-                </Button>
-              </div>
+              <CopyEmailClient />
             </div>
           )}
         </div>

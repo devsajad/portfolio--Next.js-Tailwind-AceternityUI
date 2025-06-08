@@ -3,8 +3,10 @@ import React from "react";
 export const FooterButtons = ({
   icon,
   to,
+  label,
 }: {
   to: string;
+  label: string;
   icon?: React.ReactElement;
 }) => {
   const enhancedIcon = React.cloneElement(
@@ -21,6 +23,7 @@ export const FooterButtons = ({
       className="z-11 cursor-pointer group/btn shadow-input relative flex items-center justify-center p-2.5 rounded-md bg-gray-50 font-medium text-black dark:bg-project-background dark:border-border-color border"
       href={to}
       target="_blank"
+      aria-label={label}
     >
       {enhancedIcon}
       <BottomGradient />

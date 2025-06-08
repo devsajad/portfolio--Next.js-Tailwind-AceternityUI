@@ -18,14 +18,17 @@ export const Footer = () => {
           <FooterButtons
             to="https://github.com/devsajad"
             icon={<IconBrandGithub />}
+            label="github link"
           />
           <FooterButtons
             to="https://t.me/sajjadzpr"
             icon={<IconBrandTelegram />}
+            label="telgram link"
           />
           <FooterButtons
             to="https://www.linkedin.com/in/sajjad-zarepour-302750241"
             icon={<IconBrandLinkedin />}
+            label="linkedin link"
           />
         </div>
       </div>

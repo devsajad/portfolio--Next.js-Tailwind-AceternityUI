@@ -4,7 +4,6 @@ import { Button } from "./ui/Button";
 import { timelineData } from "../_data/compsData";
 
 export function TimeLineSec() {
-
   const data = timelineData.map((item) => ({
     title: (
       <>
@@ -18,19 +17,19 @@ export function TimeLineSec() {
     ),
     content: (
       <>
-        <div className="space-x-2">
-          {item.badges.map((badge: string, i: number) => (
-            <Button key={i} className="h-7" type="button">
-              <Button.Content className="text-black-100 px-2 font-extra text-xs">
-                <span>{badge}</span>
-              </Button.Content>
-            </Button>
-          ))}
-        </div>
         <header>
           <p className="font-light text-base text-gray-300 mt-2">
             {item.description}
           </p>
+          <div className="space-x-2 mt-4">
+            {item.badges.map((badge: string, i: number) => (
+              <Button key={i} className="h-7" type="button">
+                <Button.Content className="text-black-100 px-2 font-extra text-xs">
+                  <span>{badge}</span>
+                </Button.Content>
+              </Button>
+            ))}
+          </div>
         </header>
       </>
     ),
