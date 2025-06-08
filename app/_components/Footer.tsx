@@ -15,9 +15,18 @@ export const Footer = () => {
         <p>Copyright © 2025 Sajjad Zarepour</p>
 
         <div className="flex gap-2">
-          <FooterButtons icon={<IconBrandGithub />} />
-          <FooterButtons icon={<IconBrandTelegram />} />
-          <FooterButtons icon={<IconBrandLinkedin />} />
+          <FooterButtons
+            to="https://github.com/devsajad"
+            icon={<IconBrandGithub />}
+          />
+          <FooterButtons
+            to="https://t.me/sajjadzpr"
+            icon={<IconBrandTelegram />}
+          />
+          <FooterButtons
+            to="https://www.linkedin.com/in/sajjad-zarepour-302750241"
+            icon={<IconBrandLinkedin />}
+          />
         </div>
       </div>
     </footer>

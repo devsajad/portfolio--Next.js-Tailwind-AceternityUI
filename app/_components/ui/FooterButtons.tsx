@@ -2,8 +2,9 @@ import React from "react";
 
 export const FooterButtons = ({
   icon,
+  to,
 }: {
-  children?: string;
+  to: string;
   icon?: React.ReactElement;
 }) => {
   const enhancedIcon = React.cloneElement(
@@ -16,13 +17,14 @@ export const FooterButtons = ({
   );
 
   return (
-    <button
+    <a
       className="z-11 cursor-pointer group/btn shadow-input relative flex items-center justify-center p-2.5 rounded-md bg-gray-50 font-medium text-black dark:bg-project-background dark:border-border-color border"
-      type="submit"
+      href={to}
+      target="_blank"
     >
       {enhancedIcon}
       <BottomGradient />
-    </button>
+    </a>
   );
 };
 

@@ -7,8 +7,8 @@ export const Avatar = () => {
   return (
     <div className="flex flex-col gap-2 items-center justify-center relative mb-2">
       <Image
-        quality={80}
-        placeholder="blur"
+        priority={true}
+        quality={90}
         src={avatarImg}
         alt="sajjad zarepour avatar in space"
         width={100}
