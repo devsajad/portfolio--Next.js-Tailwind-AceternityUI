@@ -17,7 +17,7 @@ export const FooterButtons = ({
 
   return (
     <button
-      className="pointer group/btn shadow-input relative flex items-center justify-center p-2.5 rounded-md bg-gray-50 font-medium text-black dark:bg-project-background dark:border-border-color border"
+      className="z-11 cursor-pointer group/btn shadow-input relative flex items-center justify-center p-2.5 rounded-md bg-gray-50 font-medium text-black dark:bg-project-background dark:border-border-color border"
       type="submit"
     >
       {enhancedIcon}

@@ -50,7 +50,7 @@ export function Contact() {
             />
           </LabelInputContainer>
 
-          <Button className="h-10 w-full" type="submit">
+          <Button className="h-10 w-full mt-6" type="submit">
             <Button.Content className="text-black-100 ">
               Send message &rarr;
             </Button.Content>
