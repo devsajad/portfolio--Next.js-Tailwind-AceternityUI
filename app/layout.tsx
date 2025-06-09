@@ -7,9 +7,12 @@ import { Footer } from "@/app/_components/Footer";
 import { BodyLightsStars } from "./_components/ui/BodyLightsStars";
 
 export const metadata: Metadata = {
-  title: "Sajjad Zarepour Portfolio",
+  title: {
+    template: "Sajjad Zarepour | %s",
+    default: "Sajjad Zarepour Portfolio",
+  },
   description:
-    "Discover Sajjad Zarepour’s portfolio, including personal projects, resume, skills, and frontend development work using React and Next.js.",
+    "Discover Sajjad Zarepour's portfolio, including personal projects, resume, skills, and frontend development work using React and Next.js.",
   keywords: [
     "Sajad zarepour",
     "Sajad zarepur",
